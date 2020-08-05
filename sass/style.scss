@@ -97,6 +97,7 @@ body {
 
         .menu {
             width: calc(100% - 20rem);
+
             @include align-row(right);
 
             a {
@@ -113,14 +114,13 @@ body {
                 }
 
                 &:hover {
-                    box-shadow: 0 0 0 0.075rem #fff;
-                    color: #fff;
+                    box-shadow: 0 0 0 0.085rem #fff;
                     border-radius: 0.35rem;
                 }
             }
 
             .active {
-                box-shadow: 0 0 0 0.075rem #fff;
+                box-shadow: 0 0 0 0.085rem #fff;
                 border-radius: 0.35rem;
             }
         }

@@ -6186,15 +6186,14 @@ readers do not read off random characters that represent icons */
 }
 
 .navbar-wrapper .menu a:hover {
-  -webkit-box-shadow: 0 0 0 0.075rem #fff;
-          box-shadow: 0 0 0 0.075rem #fff;
-  color: #fff;
+  -webkit-box-shadow: 0 0 0 0.085rem #fff;
+          box-shadow: 0 0 0 0.085rem #fff;
   border-radius: 0.35rem;
 }
 
 .navbar-wrapper .menu .active {
-  -webkit-box-shadow: 0 0 0 0.075rem #fff;
-          box-shadow: 0 0 0 0.075rem #fff;
+  -webkit-box-shadow: 0 0 0 0.085rem #fff;
+          box-shadow: 0 0 0 0.085rem #fff;
   border-radius: 0.35rem;
 }
 

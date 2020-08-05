@@ -6143,6 +6143,10 @@ readers do not read off random characters that represent icons */
           justify-content: space-between;
 }
 
+.navbar-wrapper .logo-container {
+  width: 20rem;
+}
+
 .navbar-wrapper .logo-container .logo {
   font-size: 2.5rem;
   font-family: 'Gochi Hand', cursive;
@@ -6150,12 +6154,31 @@ readers do not read off random characters that represent icons */
   font-weight: 500;
 }
 
+.navbar-wrapper .menu {
+  width: calc(100% - 20rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .navbar-wrapper .menu a {
-  margin-left: 4rem;
+  margin: 0 1rem;
+  padding: 0.65rem 1rem;
   color: #fff;
   text-decoration: none;
   -webkit-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
+  font-size: 0.85rem;
 }
 
 .navbar-wrapper .menu a:visited, .navbar-wrapper .menu a:active {
@@ -6163,7 +6186,16 @@ readers do not read off random characters that represent icons */
 }
 
 .navbar-wrapper .menu a:hover {
-  color: #F23185;
+  -webkit-box-shadow: 0 0 0 0.075rem #fff;
+          box-shadow: 0 0 0 0.075rem #fff;
+  color: #fff;
+  border-radius: 0.35rem;
+}
+
+.navbar-wrapper .menu .active {
+  -webkit-box-shadow: 0 0 0 0.075rem #fff;
+          box-shadow: 0 0 0 0.075rem #fff;
+  border-radius: 0.35rem;
 }
 
 .semicolon {

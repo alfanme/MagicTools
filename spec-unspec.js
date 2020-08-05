@@ -32,26 +32,34 @@ run.addEventListener('click', () => {
     let output = ''
 
     rxs.forEach((rx, index) => {
-        console.log(rx)
-        if (rx !== '') {
-            if (index === rxs.length - 1) {
-                if (!isNaN(rx)) {
-                    output = output + `SPEC`
+        console.log(!rx.includes('SPEC'))
+        if (!rx.includes('SPEC')) {
+            if (rx !== '' && rx > -24) {
+                if (index === rxs.length - 1) {
+                    if (!isNaN(rx)) {
+                        output = output + `SPEC`
+                    } else {
+                        output = output + `UNSPEC`
+                    }
                 } else {
-                    output = output + `UNSPEC`
+                    if (!isNaN(rx)) {
+                        output = output + `SPEC\n`
+                    } else {
+                        output = output + `UNSPEC\n`
+                    }
                 }
             } else {
-                if (!isNaN(rx)) {
-                    output = output + `SPEC\n`
+                if (index === rxs.length - 1) {
+                    output = output + `UNSPEC`
                 } else {
                     output = output + `UNSPEC\n`
                 }
             }
         } else {
             if (index === rxs.length - 1) {
-                output = output + `UNSPEC`
+                output = output + `${rx}`
             } else {
-                output = output + `UNSPEC\n`
+                output = output + `${rx}\n`
             }
         }
     })

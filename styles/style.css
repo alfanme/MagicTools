@@ -6197,7 +6197,7 @@ readers do not read off random characters that represent icons */
   border-radius: 0.35rem;
 }
 
-.semicolon {
+.hero {
   width: 100%;
   min-height: calc(100vh - 5rem);
   display: -webkit-box;
@@ -6215,7 +6215,7 @@ readers do not read off random characters that represent icons */
           align-items: center;
 }
 
-.semicolon-wrapper {
+.hero-wrapper {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6235,7 +6235,7 @@ readers do not read off random characters that represent icons */
           justify-content: space-between;
 }
 
-.semicolon-wrapper-container {
+.hero-wrapper-container {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6252,12 +6252,12 @@ readers do not read off random characters that represent icons */
           align-items: center;
 }
 
-.semicolon-wrapper-container h2 {
+.hero-wrapper-container h2 {
   margin-bottom: 2rem;
   color: #fff;
 }
 
-.semicolon-wrapper-container .input-container {
+.hero-wrapper-container .input-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6273,13 +6273,13 @@ readers do not read off random characters that represent icons */
           align-items: left;
 }
 
-.semicolon-wrapper-container .input-container .textarea {
+.hero-wrapper-container .input-container .textarea {
   width: 30rem;
   height: 25rem;
   position: relative;
 }
 
-.semicolon-wrapper-container .input-container .textarea .input {
+.hero-wrapper-container .input-container .textarea .input {
   font-size: 1rem;
   line-height: 1.5;
   width: 100%;
@@ -6291,7 +6291,7 @@ readers do not read off random characters that represent icons */
   color: #fff;
 }
 
-.semicolon-wrapper-container .input-container .textarea .total {
+.hero-wrapper-container .input-container .textarea .total {
   color: rgba(255, 255, 255, 0.5);
   position: absolute;
   top: 1.5rem;
@@ -6300,7 +6300,7 @@ readers do not read off random characters that represent icons */
   line-height: 1.5;
 }
 
-.semicolon-wrapper-container .input-container .textarea .done {
+.hero-wrapper-container .input-container .textarea .done {
   color: #fff;
   padding: 0.3rem 0.7rem;
   border-radius: 0.2rem;
@@ -6309,7 +6309,7 @@ readers do not read off random characters that represent icons */
   right: 1.2rem;
 }
 
-.semicolon-wrapper-container .input-container .btn-container {
+.hero-wrapper-container .input-container .btn-container {
   width: 30rem;
   height: 3.5rem;
   display: -webkit-box;
@@ -6327,40 +6327,40 @@ readers do not read off random characters that represent icons */
           align-items: center;
 }
 
-.semicolon-wrapper-container .input-container .btn-container .run,
-.semicolon-wrapper-container .input-container .btn-container .copy {
+.hero-wrapper-container .input-container .btn-container .run,
+.hero-wrapper-container .input-container .btn-container .copy {
   width: 50%;
   height: 100%;
 }
 
-.semicolon-wrapper-container .input-container .btn-container .run {
+.hero-wrapper-container .input-container .btn-container .run {
   background-color: #F23185;
   color: #fff;
   border-radius: 0 0 0 0.5rem;
 }
 
-.semicolon-wrapper-container .input-container .btn-container .run:hover {
+.hero-wrapper-container .input-container .btn-container .run:hover {
   background-color: #D90073;
   cursor: pointer;
 }
 
-.semicolon-wrapper-container .input-container .btn-container .copy {
+.hero-wrapper-container .input-container .btn-container .copy {
   background-color: #e0e0e0;
   color: #505050;
   border-radius: 0 0 0.5rem 0;
 }
 
-.semicolon-wrapper-container .input-container .btn-container .copy:hover {
+.hero-wrapper-container .input-container .btn-container .copy:hover {
   background-color: #d0d0d0;
   cursor: pointer;
 }
 
-.semicolon-wrapper-container .requirement {
+.hero-wrapper-container .requirement {
   margin-top: 2rem;
   color: #707070;
 }
 
-.semicolon-wrapper .illustration {
+.hero-wrapper .illustration {
   margin-top: 2rem;
   width: 15rem;
   -webkit-animation: terbang 4s infinite;
@@ -6421,26 +6421,26 @@ readers do not read off random characters that represent icons */
   }
 }
 
-.semicolon-wrapper .big-text {
+.hero-wrapper .big-text {
   width: 50%;
   padding: 0 7rem;
 }
 
-.semicolon-wrapper .big-text h1 {
+.hero-wrapper .big-text h1 {
   font-size: 3.5rem;
   font-weight: 700;
   color: #fff;
   margin-bottom: 1rem;
 }
 
-.semicolon-wrapper .big-text h1 span {
+.hero-wrapper .big-text h1 span {
   font-size: 5rem;
   font-family: 'Gochi Hand', cursive;
   color: #fff;
   font-weight: 500;
 }
 
-.semicolon-wrapper .big-text h2 {
+.hero-wrapper .big-text h2 {
   color: #fff;
   font-weight: normal;
   font-size: 1.5rem;

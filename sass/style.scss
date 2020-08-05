@@ -129,7 +129,7 @@ body {
 }
 
 // semicolon stuff
-.semicolon {
+.hero {
     width: 100%;
     min-height: calc(100vh - 5rem);
     // background-color: #f0f0f0;
@@ -305,7 +305,5 @@ body {
         height: 100%;
         @include center-col();
         // background-color: yellow;
-
-        p {}
     }
 }

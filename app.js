@@ -19,9 +19,8 @@ inetInputOutput.addEventListener('input', () => {
     } else if (count > 1) {
         total.innerHTML = `${count} lines`
     }
-    console.log(input)
+
     if (input === '') {
-        console.log('masuk')
         count = 0
         total.innerHTML = `${count} line`
     }

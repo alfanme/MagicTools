@@ -32,7 +32,6 @@ run.addEventListener('click', () => {
     let output = ''
 
     rxs.forEach((rx, index) => {
-        console.log(!rx.includes('SPEC'))
         if (!rx.includes('SPEC')) {
             if (rx !== '' && rx > -24) {
                 if (index === rxs.length - 1) {

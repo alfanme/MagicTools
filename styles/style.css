@@ -6370,6 +6370,8 @@ readers do not read off random characters that represent icons */
 
 .hero-wrapper-container .requirement {
   margin-top: 2rem;
+  line-height: 1.5;
+  text-align: center;
   color: #707070;
 }
 

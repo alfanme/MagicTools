@@ -6499,8 +6499,11 @@ readers do not read off random characters that represent icons */
           align-items: center;
 }
 
-.hero-wrapper .big-text .example .item-2 {
-  margin-left: 6rem;
+.hero-wrapper .big-text .example .arrow {
+  font-size: 3rem;
+  margin: 0 3rem;
+  color: #F23185;
+  border-radius: 50%;
 }
 
 .footer {

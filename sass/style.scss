@@ -328,10 +328,14 @@ body {
             .example {
                 @include align-row(left);
 
-                .item-2 {
-                    margin-left: 6rem;
+                .arrow {
+                    font-size: 3rem;
+                    margin: 0 3rem;
+                    color: #F23185;
+                    border-radius: 50%;
                 }
             }
+
         }
     }
 }

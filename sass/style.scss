@@ -266,6 +266,7 @@ body {
         }
 
         .big-text {
+            margin-top: -1rem;
             width: 50%;
             padding: 0 7rem;
             // background-color: red;
@@ -288,6 +289,35 @@ body {
                 color: #fff;
                 font-weight: normal;
                 font-size: 1.5rem;
+            }
+
+            .tutorial-title {
+                font-size: 2rem;
+            }
+
+            .tutorial-subtitle {
+                font-size: 1.25rem;
+                color: #F23185;
+                margin: 1rem 0;
+            }
+
+            .tutorial-desc {
+                margin-left: 1rem;
+                font-size: 1rem;
+                color: #fff;
+                line-height: 2;
+            }
+
+            li {
+                margin-left: 1rem;
+            }
+
+            .example {
+                @include align-row(left);
+
+                .item-2 {
+                    margin-left: 6rem;
+                }
             }
         }
     }

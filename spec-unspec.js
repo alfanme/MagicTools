@@ -33,7 +33,7 @@ run.addEventListener('click', () => {
 
     rxs.forEach((rx, index) => {
         if (!rx.includes('SPEC')) {
-            if (rx !== '' && rx > -24) {
+            if (rx !== '' && rx > -24 && rx <= -13) {
                 if (index === rxs.length - 1) {
                     if (!isNaN(rx)) {
                         output = output + `SPEC`

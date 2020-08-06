@@ -6497,13 +6497,45 @@ readers do not read off random characters that represent icons */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.hero-wrapper .big-text .example .item-2 {
+  margin-left: 8.5rem;
 }
 
 .hero-wrapper .big-text .example .arrow {
   font-size: 3rem;
-  margin: 0 3rem;
+  margin-left: 6.5rem;
   color: #F23185;
   border-radius: 50%;
+  position: absolute;
+  -webkit-animation: arrow 1s ease-in-out infinite;
+          animation: arrow 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    margin-left: 6.5rem;
+  }
+  50% {
+    margin-left: 7rem;
+  }
+  100% {
+    margin: 6.5rem;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    margin-left: 6.5rem;
+  }
+  50% {
+    margin-left: 7rem;
+  }
+  100% {
+    margin: 6.5rem;
+  }
 }
 
 .footer {

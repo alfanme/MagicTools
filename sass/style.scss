@@ -327,12 +327,33 @@ body {
 
             .example {
                 @include align-row(left);
+                position: relative;
+
+                .item-2 {
+                    margin-left: 8.5rem;
+                }
 
                 .arrow {
                     font-size: 3rem;
-                    margin: 0 3rem;
+                    margin-left: 6.5rem;
                     color: #F23185;
                     border-radius: 50%;
+                    position: absolute;
+                    animation: arrow 1s ease-in-out infinite;
+
+                    @keyframes arrow {
+                        0% {
+                            margin-left: 6.5rem;
+                        }
+
+                        50% {
+                            margin-left: 7rem;
+                        }
+
+                        100% {
+                            margin: 6.5rem;
+                        }
+                    }
                 }
             }
 

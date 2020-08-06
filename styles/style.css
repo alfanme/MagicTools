@@ -6197,6 +6197,19 @@ readers do not read off random characters that represent icons */
   border-radius: 0.35rem;
 }
 
+.navbar-wrapper .menu .coming-soon {
+  color: #707070 !important;
+}
+
+.navbar-wrapper .menu .coming-soon:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar-wrapper .menu .coming-soon::after {
+  content: ' (Coming soon!)';
+}
+
 .hero {
   width: 100%;
   min-height: calc(100vh - 5rem);

@@ -6178,7 +6178,7 @@ readers do not read off random characters that represent icons */
   text-decoration: none;
   -webkit-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 .navbar-wrapper .menu a:visited, .navbar-wrapper .menu a:active {
@@ -6372,7 +6372,7 @@ readers do not read off random characters that represent icons */
   margin-top: 2rem;
   line-height: 1.5;
   text-align: center;
-  color: #707070;
+  color: #a0a0a0;
 }
 
 .hero-wrapper .illustration {
@@ -6443,14 +6443,14 @@ readers do not read off random characters that represent icons */
 }
 
 .hero-wrapper .big-text h1 {
-  font-size: 3.5rem;
+  font-size: 3.25rem;
   font-weight: 700;
   color: #fff;
   margin-bottom: 1rem;
 }
 
 .hero-wrapper .big-text h1 span {
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-family: 'Gochi Hand', cursive;
   color: #fff;
   font-weight: 500;
@@ -6459,22 +6459,22 @@ readers do not read off random characters that represent icons */
 .hero-wrapper .big-text h2 {
   color: #fff;
   font-weight: normal;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .hero-wrapper .big-text .tutorial-title {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 .hero-wrapper .big-text .tutorial-subtitle {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #F23185;
   margin: 1rem 0;
 }
 
 .hero-wrapper .big-text .tutorial-desc {
   margin-left: 1rem;
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: #fff;
   line-height: 2;
 }
@@ -6535,6 +6535,28 @@ readers do not read off random characters that represent icons */
   }
   100% {
     margin: 6.5rem;
+  }
+}
+
+.hero-wrapper .big-text .example .arrow2 {
+  font-size: 3rem;
+  margin-left: 12rem;
+  color: #F23185;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-animation: arrow 1s ease-in-out infinite;
+          animation: arrow 1s ease-in-out infinite;
+}
+
+@keyframes arrow {
+  0% {
+    margin-left: 12rem;
+  }
+  50% {
+    margin-left: 12.5rem;
+  }
+  100% {
+    margin: 12rem;
   }
 }
 

@@ -17,8 +17,8 @@
             </div>
             <div class="menu">
                 <a href="./index.html">Semicolon Post-fixer</a>
-                <a href="#" class="active">SPEC-UNSPEC Checker</a>
-                <a href="./sto-odp.html">Get STO from Calling Station Id</a>
+                <a href="./spec-unspec.html">SPEC-UNSPEC Checker</a>
+                <a href="#" class="active">Get STO from Calling Station Id</a>
                 <a href="#"><i class="fas fa-envelope"></i>&nbsp&nbspRequest Tools</a>
             </div>
         </div>
@@ -26,10 +26,10 @@
     <section class="hero">
         <div class="hero-wrapper">
             <div class="hero-wrapper-container">
-                <h2>SPEC-UNSPEC Checker</span></h2>
+                <h2>Get STO from Calling Station Id</span></h2>
                 <div class="input-container">
                     <div class="textarea">
-                        <textarea name="input" class="input" placeholder="Paste RX dBm here"></textarea>
+                        <textarea name="input" class="input" placeholder="Paste Calling Station Id here"></textarea>
                         <p class="total">0 line</p>
                     </div>
                     <div class="btn-container">
@@ -38,28 +38,29 @@
                     </div>
                 </div>
                 <p class="requirement">
-                    *No maximum data, put as many as you want!<br>
-                    **SPEC RX range is -23.99 ----> -13.0 </p>
+                    *No maximum data, put as many as you want!
+                </p>
 
             </div>
             <div class="big-text">
-                <h1 class="tutorial-title">How to use SPEC-UNSPEC Checker?</h1>
+                <h1 class="tutorial-title">How to use Get STO from Calling Station Id?</h1>
                 <h2 class="tutorial-subtitle">Steps:</h2>
 
                 <ol class="tutorial-desc">
-                    <li>Input RX dBm numbers (e.g: -17.3)</li>
-                    <li>Click &nbsp<i class="fas fa-play-circle"></i>&nbsp&nbspRun, it'll automatically analyze
-                        each
-                        of the RXs whether it's SPEC or UNSPEC</li>
+                    <li>Input Calling Station Ids<br>(e.g: GPON01-D1-TLK-2 xpon 0/2/0/10:16.3.200)</li>
+                    <li>Click &nbsp<i class="fas fa-play-circle"></i>&nbsp&nbspRun, it'll automatically separate the STO
+                        code from the given ODP code</li>
                     <li>Click &nbsp<i class="fas fa-copy"></i>&nbsp&nbspCopy</li>
                     <i class="fas fa-check"></i>&nbsp&nbspDone, the data is ready for you to use 😊</li>
                 </ol>
 
                 <h2 class="tutorial-subtitle">Example:</h2>
                 <div class="example">
-                    <p class="tutorial-desc">INPUT:<br>-17.3<br>-25<br>-<br>-11<br>text</p>
-                    <p class="arrow"><i class="fas fa-angle-double-right"></i></p>
-                    <p class="tutorial-desc item-2">OUTPUT:<br>SPEC<br>UNSPEC<br>UNSPEC<br>UNSPEC<br>UNSPEC</p>
+                    <p class="tutorial-desc">INPUT:<br>GPON01-D1-TLK-2 xpon 0/2/0/10:16.3.200<br>GPON02-D1-PLJ-3 pon
+                        1/1/01/11/09/2:2945<br>GPON02-D1-SGB-2 xpon 0/5/0/12:16.3.200
+                    </p>
+                    <p class="arrow2"><i class="fas fa-angle-double-right"></i></p>
+                    <p class="tutorial-desc item-2">OUTPUT:<br>TLK<br>PLJ<br>SGB</p>
                 </div>
             </div>
         </div>
@@ -71,7 +72,7 @@
         </div>
     </footer>
 
-    <script src="./spec-unspec.js"></script>
+    <script src="./sto-odp.js"></script>
 </body>
 
 </html>

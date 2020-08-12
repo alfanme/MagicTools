@@ -28,41 +28,26 @@ inetInputOutput.addEventListener('input', () => {
 
 run.addEventListener('click', () => {
     const input = inetInputOutput.value
-    const rxs = input.split('\n')
+    const inets = input.split('\n')
     let output = ''
 
-    rxs.forEach((rx, index) => {
-        if (!rx.includes('SPEC')) {
-            if (rx !== '' && rx > -24 && rx <= -13) {
-                if (index === rxs.length - 1) {
-                    if (!isNaN(rx)) {
-                        output = output + `SPEC`
-                    } else {
-                        output = output + `UNSPEC`
-                    }
-                } else {
-                    if (!isNaN(rx)) {
-                        output = output + `SPEC\n`
-                    } else {
-                        output = output + `UNSPEC\n`
-                    }
+    inets.forEach((inet, index) => {
+        if (inet !== '') {
+            if (index === inets.length - 1) {
+                if (inet.length !== 3 && inet != '\n') {
+                    output = output + `${sto[2]}`
+                } else if (inet.length === 3) {
+                    output = output + `${inet}`
                 }
             } else {
-                if (index === rxs.length - 1) {
-                    output = output + ``
-                } else {
-                    output = output + `UNSPEC\n`
+                if (inet.length !== 3 && inet != '\n') {
+                    output = output + `${sto[2]}\n`
+                } else if (inet.length === 3) {
+                    output = output + `${inet}\n`
                 }
-            }
-        } else {
-            if (index === rxs.length - 1) {
-                output = output + `${rx}`
-            } else {
-                output = output + `${rx}\n`
             }
         }
     })
-
     inetInputOutput.value = output
 
     if (count > 0) {

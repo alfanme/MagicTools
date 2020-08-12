@@ -33,6 +33,7 @@ run.addEventListener('click', () => {
 
     inets.forEach((inet, index) => {
         if (inet !== '') {
+            const sto = inet.split('-')
             if (index === inets.length - 1) {
                 if (inet.length !== 3 && inet != '\n') {
                     output = output + `${sto[2]}`

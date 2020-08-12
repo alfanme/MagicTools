@@ -332,6 +332,7 @@ body {
                     margin-left: 8.5rem;
                 }
 
+
                 .arrow {
                     font-size: 3rem;
                     margin-left: 6.5rem;
@@ -355,15 +356,15 @@ body {
                     }
                 }
 
-                .arrow2 {
+                .panah {
                     font-size: 3rem;
                     margin-left: 12rem;
                     color: #F23185;
                     border-radius: 50%;
                     position: absolute;
-                    animation: arrow 1s ease-in-out infinite;
+                    animation: panah 1s ease-in-out infinite;
 
-                    @keyframes arrow {
+                    @keyframes panah {
                         0% {
                             margin-left: 12rem;
                         }

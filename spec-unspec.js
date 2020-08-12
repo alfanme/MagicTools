@@ -33,15 +33,15 @@ run.addEventListener('click', () => {
 
     rxs.forEach((rx, index) => {
         if (!rx.includes('SPEC')) {
-            if (rx !== '' && rx > -24 && rx <= -13) {
+            if (rx !== '') {
                 if (index === rxs.length - 1) {
-                    if (!isNaN(rx)) {
+                    if (!isNaN(rx) && rx > -24 && rx <= -13) {
                         output = output + `SPEC`
                     } else {
                         output = output + `UNSPEC`
                     }
                 } else {
-                    if (!isNaN(rx)) {
+                    if (!isNaN(rx) && rx > -24 && rx <= -13) {
                         output = output + `SPEC\n`
                     } else {
                         output = output + `UNSPEC\n`
@@ -49,7 +49,9 @@ run.addEventListener('click', () => {
                 }
             } else {
                 if (index === rxs.length - 1) {
-                    output = output + ``
+                    if (rx !== '') {
+                        output = output + `UNSPEC`
+                    }
                 } else {
                     output = output + `UNSPEC\n`
                 }
